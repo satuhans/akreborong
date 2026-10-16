@@ -1,0 +1,162 @@
+# AKRE-BERITA
+MEDIA PELAYANANAN KEREN
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MEDIA GEREJA - melayani dengan tulus</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--merah:#0000FF;--hitam:#111;--abu:#f5f5f5}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#fff;color:var(--hitam)}
+a{text-decoration:none;color:inherit}
+
+/* HEADER */
+.top-bar{background:var(--hitam);color:#fff;padding:6px 5%;font-size:12px;display:flex;justify-content:space-between}
+header{padding:15px 5%;display:flex;justify-content:space-between;align-items:center;border-bottom:3px solid var(--merah);position:sticky;top:0;background:#fff;z-index:99}
+.logo{font-family:'Merriweather',serif;font-size:28px;font-weight:700}
+.logo span{color:var(--merah)}
+nav{display:flex;gap:20px;font-weight:600;font-size:14px}
+nav a:hover{color:var(--merah)}
+.breaking{background:var(--merah);color:#fff;padding:8px 5%;display:flex;gap:10px;font-size:14px;white-space:nowrap;overflow:hidden}
+.breaking b{background:#fff;color:var(--merah);padding:2px 8px;border-radius:3px}
+
+/* LAYOUT */
+.container{padding:20px 5%;display:grid;grid-template-columns:2.5fr 1fr;gap:25px}
+.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:15px}
+.hero-main{position:relative;border-radius:8px;overflow:hidden;height:400px}
+.hero-main img,.card img{width:100%;height:100%;object-fit:cover}
+.hero-main .info{position:absolute;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.8));color:#fff;padding:20px;width:100%}
+.hero-side{display:flex;flex-direction:column;gap:15px}
+.side-card{height:192px;border-radius:8px;overflow:hidden;position:relative}
+.side-card .info{position:absolute;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.7));color:#fff;padding:12px;font-size:14px;width:100%}
+
+/* LIST BERITA */
+.section-title{margin:30px 0 15px;font-family:'Merriweather';border-left:4px solid var(--merah);padding-left:10px}
+.grid-berita{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.card{border:1px solid #eee;border-radius:8px;overflow:hidden;transition:.2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 5px 15px rgba(0,0,0,.1)}
+.card img{height:160px}
+.card-body{padding:12px}
+.kategori{font-size:11px;background:var(--merah);color:#fff;padding:3px 7px;border-radius:3px;display:inline-block;margin-bottom:6px}
+.card h3{font-size:15px;line-height:1.4;margin-bottom:5px}
+.meta{font-size:12px;color:#888}
+
+/* SIDEBAR */
+.sidebar{position:sticky;top:90px;height:fit-content}
+.widget{background:var(--abu);padding:15px;border-radius:8px;margin-bottom:20px}
+.widget h4{margin-bottom:10px;border-bottom:2px solid var(--merah);padding-bottom:5px}
+.populer li{list-style:none;padding:8px 0;border-bottom:1px solid #ddd;font-size:14px;display:flex;gap:10px}
+.populer li b{color:var(--merah);font-size:18px}
+
+footer{background:var(--hitam);color:#aaa;text-align:center;padding:20px;margin-top:30px;font-size:13px}
+
+@media(max-width:900px){
+.container,.hero,.grid-berita{grid-template-columns:1fr}
+.hero-main{height:280px}
+}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+<span id="tanggal"></span>
+<span>🔴 LIVE: MISA MINGGUAN</span>
+</div>
+
+<header>
+<div class="logo">AKRE<span>LODOS</span></div>
+<nav>
+<a href="#">KATEKESE</a>
+<a href="#">JADWAL MISA</a>
+<a href="#">EKONOMI KBG</a>
+<a href="#">IBADAT</a>
+<a href="#">TEKS KOOR</a>
+</nav>
+</header>
+
+<div class="breaking">
+<b>PEWARTAAN</b>
+<marquee> Misa penutupan doa Rosario Bulan Oktober 2026 dihadirii oleh ribuan umat • </marquee>
+</div>
+
+<div class="container">
+<main>
+<!-- HERO -->
+<div class="hero">
+<div class="hero-main">
+<img src="https://picsum.photos/800/400?random=1">
+<div class="info">
+<span class="kategori">PAROKI</span>
+<h2>DOA ROSARIO</h2>
+<p style="font-size:13px;opacity:.8">2 jam lalu • 5 KBG siap menjadi teladan</p>
+</div>
+</div>
+<div class="hero-side">
+<div class="side-card">
+<img src="https://picsum.photos/400/200?random=2">
+<div class="info"><h4>Pelayanan bagus</h4></div>
+</div>
+<div class="side-card">
+<img src="https://picsum.photos/400/200?random=3">
+<div class="info"><h4>5 Tips dapat berkat</h4></div>
+</div>
+</div>
+</div>
+
+<h3 class="section-title">Warta terbaru</h3>
+<div class="grid-berita">
+<div class="card">
+<img src="https://picsum.photos/400/200?random=4">
+<div class="card-body">
+<span class="kategori">EKONOMI KBG</span>
+<h3>KBG Lodos 3 Juara</h3>
+<div class="meta">Hari ini • 120 pembaca</div>
+</div>
+</div>
+<div class="card">
+<img src="https://picsum.photos/400/200?random=5">
+<div class="card-body">
+<span class="kategori">PENDIDIKAN Stasi</span>
+<h3>Cara Menghitung uang KBG</h3>
+<div class="meta">Hari ini • 40 pembaca</div>
+</div>
+</div>
+<div class="card">
+<img src="https://picsum.photos/400/200?random=6">
+<div class="card-body">
+<span class="kategori">TEKNO</span>
+<h3>Doa dalam Bahasa Manggarai</h3>
+<div class="meta">Kemarin</div>
+</div>
+</div>
+</div>
+</main>
+
+<aside class="sidebar">
+<div class="widget">
+<h4>🔥 Terpopuler</h4>
+<ol class="populer">
+<li><b>1</b> Pelayanan KBG</li>
+<li><b>2</b> Pelayanan Stasi</li>
+<li><b>3</b> Pelayanan Paroki</li>
+<li><b>4</b> Jadwal misa di luar</li>
+</ol>
+</div>
+<div class="widget">
+<h4>Subscribe</h4>
+<input type="text" placeholder="Email Anda" style="width:100%;padding:8px;border-radius:4px;border:1px solid #ccc">
+<button style="width:100%;margin-top:8px;background:var(--merah);color:#fff;border:0;padding:8px;border-radius:4px;font-weight:600">DAFTAR</button>
+</div>
+</aside>
+</div>
+
+<footer>© 2026 BeritaAkre - web untuk pelayanan/footer>
+
+<script>
+document.getElementById('tanggal').innerText = new Date().toLocaleDateString('id-ID',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+</script>
+</body>
+</html>
